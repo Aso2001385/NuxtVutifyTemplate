@@ -1,10 +1,4 @@
-# LaravelNuxtTemplate
-
-## このテンプレートリポジトリについて
-
-このテンプレートリポジトリを使うと簡単に Laravel×Nuxt の SPA プロジェクトを作成することができます。
-<br>
-コミット履歴を残すことなく環境を構築することができ、使いまわすことで環境構築の速度を引き上げることができます。
+# NuxtVuetifyTemplate
 
 ## 環境構築
 
@@ -21,11 +15,21 @@ $ volta install node
 $ volta install yarn
 ```
 
-### 環境構築リファレンス
+```bash
+# 依存パッケージのインストール
+$ yarn install
 
-- .env.example ファイルの中身をもとに.env ファイルを作成する
-- .env ファイルの「YOUR\_~」を自分の好きな名称に書き換える
-- 以下を参照して各環境を構築する
+# ローカル起動
+$ yarn dev
+```
 
-* [frontend](./reference/frontend.md)
-* [backend](./reference/backend.md)
+### コマンドリファレンス
+
+```bash
+# lintチェック コミット前に流してください
+$ yarn run lint
+# 上記でエラーになったら以下をながしてください
+$ yarn run lintfix
+
+# そのほかのコマンドはpackage.jsonのscriptを参照ください。
+```
